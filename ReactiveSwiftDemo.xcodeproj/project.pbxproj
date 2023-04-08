@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135E70D629E1A7E50014BE7A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 135E70D529E1A7E50014BE7A /* RxCocoa */; };
+		135E70D829E1A7E50014BE7A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 135E70D729E1A7E50014BE7A /* RxSwift */; };
 		13D0303D29E19A4F00803B79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D0303C29E19A4F00803B79 /* AppDelegate.swift */; };
 		13D0303F29E19A4F00803B79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D0303E29E19A4F00803B79 /* SceneDelegate.swift */; };
 		13D0304129E19A4F00803B79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D0304029E19A4F00803B79 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135E70D829E1A7E50014BE7A /* RxSwift in Frameworks */,
+				135E70D629E1A7E50014BE7A /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				13D0303B29E19A4F00803B79 /* ReactiveSwiftDemo */,
 				13D0303A29E19A4F00803B79 /* Products */,
+				9E67101200DD1E65B750E343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = ReactiveSwiftDemo;
 			sourceTree = "<group>";
 		};
+		9E67101200DD1E65B750E343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,10 @@
 			dependencies = (
 			);
 			name = ReactiveSwiftDemo;
+			packageProductDependencies = (
+				135E70D529E1A7E50014BE7A /* RxCocoa */,
+				135E70D729E1A7E50014BE7A /* RxSwift */,
+			);
 			productName = ReactiveSwiftDemo;
 			productReference = 13D0303929E19A4F00803B79 /* ReactiveSwiftDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 13D0303029E19A4F00803B79;
+			packageReferences = (
+				135E70D429E1A7E50014BE7A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 13D0303A29E19A4F00803B79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +314,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +379,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		135E70D429E1A7E50014BE7A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		135E70D529E1A7E50014BE7A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135E70D429E1A7E50014BE7A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		135E70D729E1A7E50014BE7A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135E70D429E1A7E50014BE7A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13D0303129E19A4F00803B79 /* Project object */;
 }
